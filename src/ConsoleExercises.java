@@ -11,18 +11,23 @@ public class ConsoleExercises {
 //
 //        System.out.println("You entered: --> \"" + userInput + "\" <--");
 
-        Scanner userString1 = new Scanner(System.in);
-        System.out.print("Enter three words: ");
-        String userInput1 = userString1.nextLine();
+//        Scanner userString1 = new Scanner(System.in);
+//        System.out.print("Enter a words: ");
+//        String userInput1 = userString1.nextLine();
+//
+//        Scanner userString2 = new Scanner(System.in);
+//        System.out.print("Enter a words: ");
+//        String userInput2 = userString2.nextLine();
+//
+//        Scanner userString3 = new Scanner(System.in);
+//        System.out.print("Enter a words: ");
+//        String userInput3 = userString3.nextLine();
+//
+//        System.out.printf("%s, %s, %s!", userInput1, userInput2, userInput3);
 
-        Scanner userString2 = new Scanner(System.in);
-        System.out.print("Enter three words: ");
-        String userInput2 = userString2.nextLine();
 
-        Scanner userString3 = new Scanner(System.in);
-        System.out.print("Enter three words: ");
-        String userInput3 = userString3.nextLine();
+//
 
-        System.out.println("You entered: --> \"" + userInput1 + userInput2 + userInput3 + "\" <--");
+
     }
 }
