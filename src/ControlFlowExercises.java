@@ -7,20 +7,19 @@ public class ControlFlowExercises {
             i++;
         }
 
-        int
+        int y = 0;
         do {
-            if (someCondition) {
-                // executes if someCondition is true
-            } else if (someOtherCondition) {
-                // executes if someOtherCondition is true *and* all of the previous ifs in
-                // this block were false
+            y++;
+            if (y%2 == 0) {
+                System.out.println("y is equal to:");
+                System.out.println(y);
             }
-            System.out.println("You will see this despite the condition!");
-        } while (false);
 
+        } while (y <= 100);
 
 
     }
 }
+
 
 
