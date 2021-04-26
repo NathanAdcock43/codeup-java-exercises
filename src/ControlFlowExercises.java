@@ -52,21 +52,48 @@ public class ControlFlowExercises {
 //                System.out.println("Fizz");
 //            }else if (y%5 == 0) {
 //                System.out.println("Buzz");
-//            }while (y < 99)
-//                System.out.println(y);
-//        }
-
-        Scanner userInt = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
-        int userInput = userInt.nextInt();
-
-        for (long y = userInputy.val(); y > -10; y++) {
-            System.out.println("number");
-            System.out.printf("%s", userInput);
-    }
+//            }}while (y < 99);
+//
 
 
+//        Scanner userInt = new Scanner(System.in);
+//        System.out.print("Enter an integer: ");
+//        int userInput = userInt.nextInt();
+//
+//        System.out.println("Number    Squared    Cubed");
+//        System.out.println("______    _______    ______");
+//        for (long y = 1; y<= userInput; y++) {
+//            long y2 = y*y;
+//            long y3 = y*y*y;
+//
+//            System.out.printf("%-10d |%-10d |%-10d\n", y, y2 ,y3);
 
+            Scanner userInt = new Scanner(System.in);
+            System.out.print("Enter your grade: ");
+            int userInput = userInt.nextInt();
+//
+//        System.out.println("Number    Squared    Cubed");
+//        System.out.println("______    _______    ______");
+//        for (long y = 1; y<= userInput; y++) {
+//            long y2 = y*y;
+//            long y3 = y*y*y;
+//
+//            System.out.printf("%-10d |%-10d |%-10d\n", y, y2 ,y3);
+
+        if (userInput == 1) {
+            if (userInput > 88 && userInput < 100)
+                System.out.print("Hey! you got an: A");
+            else if (userInput > 80 && userInput < 87)
+                System.out.print("Hey! you got an: B");
+            else if (userInput > 67 && userInput < 79)
+                System.out.print("You got an: C");
+            else if (userInput > 60 && userInput < 66)
+                System.out.print("Sorry, You got an: D");
+            else if (userInput > 0 && userInput < 59)
+                System.out.print("Sorry, You got an: F");
+        } else {
+            System.out.println("Invalid grade entered.");
+        }
 
 
 }
