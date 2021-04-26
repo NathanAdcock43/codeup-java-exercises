@@ -60,16 +60,13 @@ public class ControlFlowExercises {
         System.out.print("Enter an integer: ");
         int userInput = userInt.nextInt();
 
-    int y = userInput;
-        do {
-        y++;
+        for (long y = userInputy.val(); y > -10; y++) {
             System.out.println("number");
-            System.out.println(y);
-    } while (y > -10);
+            System.out.printf("%s", userInput);
     }
 
 
-        System.out.printf("%s!", userInput);
+
 
 
 }
