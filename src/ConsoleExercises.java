@@ -26,8 +26,11 @@ public class ConsoleExercises {
 //        System.out.printf("%s, %s, %s!", userInput1, userInput2, userInput3);
 
 
+//        Scanner userSentence = new Scanner(System.in);
+//        System.out.print("Enter a Sentence: ");
+//        String userSentence1 = userSentence.nextLine();
 //
-
+//        System.out.printf("%s!", userSentence1);
 
     }
 }
