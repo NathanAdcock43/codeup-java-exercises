@@ -32,5 +32,14 @@ public class ConsoleExercises {
 //
 //        System.out.printf("%s!", userSentence1);
 
+        Scanner roomWidth = new Scanner(System.in);
+        System.out.print("Enter room width: ");
+        String roomDim1 = roomWidth.nextLine();
+
+        Scanner roomLength = new Scanner(System.in);
+        System.out.print("Enter room length: ");
+        String roomDim2 = roomLength.nextLine();
+
+        System.out.printf("%s, %s!", roomDim1, roomDim2);
     }
 }
