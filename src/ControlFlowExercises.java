@@ -124,6 +124,12 @@ public class ControlFlowExercises {
          }
          while (false);
 
+         if(userInput.equalsIgnoreCase("yes")){
+             willcontinue = true;
+         } else {
+             System.out.println("See you later");
+             willcontinue = false;
+         }
 
 
         //        do{
