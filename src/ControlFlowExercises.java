@@ -68,9 +68,7 @@ public class ControlFlowExercises {
 //
 //            System.out.printf("%-10d |%-10d |%-10d\n", y, y2 ,y3);
 
-            Scanner userInt = new Scanner(System.in);
-            System.out.print("Enter your grade: ");
-            int userInput = userInt.nextInt();
+
 //
 //        System.out.println("Number    Squared    Cubed");
 //        System.out.println("______    _______    ______");
@@ -80,21 +78,61 @@ public class ControlFlowExercises {
 //
 //            System.out.printf("%-10d |%-10d |%-10d\n", y, y2 ,y3);
 
-        if (userInput == 1) {
-            if (userInput > 88 && userInput < 100)
-                System.out.print("Hey! you got an: A");
-            else if (userInput > 80 && userInput < 87)
-                System.out.print("Hey! you got an: B");
-            else if (userInput > 67 && userInput < 79)
-                System.out.print("You got an: C");
-            else if (userInput > 60 && userInput < 66)
-                System.out.print("Sorry, You got an: D");
-            else if (userInput > 0 && userInput < 59)
-                System.out.print("Sorry, You got an: F");
-        } else {
-            System.out.println("Invalid grade entered.");
-        }
 
+//        switch (userInput) {
+//            case userInput >= 88 && userInput <= 100:
+//                    System.out.print("Hey! you got an: A");
+//                    break;
+//            case userInput >= 80 && userInput <= 87:
+//                    System.out.print("Hey! you got an: B");
+//                    break;
+//            case userInput >= 67 && userInput <= 79:
+//                     System.out.print("Hey! you got an: C");
+//                     break;
+//            case userInput >= 60 && userInput <= 66:
+//                    System.out.print("Hey! you got an: D");
+//                    break;
+//            case userInput >= 0 && userInput <= 59:
+//                    System.out.print("Hey! you got an: F");
+//                    break;
+//            default:
+//                    System.out.println("Invalid grade entered.");
+//                    break;
+//    }
+
+
+
+
+        Do{
+            System.out.print("Enter your grade: ");
+            int grade = userInt.nextInt();
+
+
+
+        if (grade >= 88 && grade <= 100)
+            System.out.print("Hey! you got an: A");
+        else if (grade >= 80 && grade <= 87)
+            System.out.print("Hey! you got an: B");
+        else if (grade >= 67 && grade <= 79)
+            System.out.print("You got an: C");
+        else if (grade >= 60 && grade <= 66)
+            System.out.print("Sorry, You got an: D");
+        else if (grade >= 0 && grade <= 59)
+            System.out.print("Sorry, You got an: F");
+        else
+            System.out.println("Invalid grade entered.");
+         }
+         while (false);
+
+
+
+        //        do{
+//            if(userInput.equalsIgnoreCase("yes")) {
+//
+//            } else{
+//
+//            }
+//        }
 
 }
 
