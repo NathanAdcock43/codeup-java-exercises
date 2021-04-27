@@ -2,9 +2,9 @@ public class MethodsExercises {
         public static void main(String[] args) {
                 addition(5, 5);
                 subtraction(3, 2);
-                multiplication(2, 2);
+                System.out.println(multiplication(2, 2));
                 division(4, 2);
-                multiplicationLoop(4, 5);
+                System.out.println(multiplicationLoop(4, 5));
                 System.out.println(multiplicationRecursion(4, 5));
         }
 
@@ -19,19 +19,20 @@ public class MethodsExercises {
         }
 
         public static double multiplication(double mult1, double mult2) {
-                double result = mult1 * mult2;
-                return result;
+                return mult1 * mult2;
         }
 
-        public static int division(int div1, int div2) {
-                return  div1 / div2;
+        public static void division(int div1, int div2) {
+                int result =  div1 / div2;
+                System.out.println(result);
         }
 
         public static double multiplicationLoop(double a, double b) {
-                double i = 0;
+                double bucket = 0;
                 for (double i = 0; i < a; i++){
-                        i += b;
+                        bucket += b;
                 }
+                return bucket;
         }
 
         public static int multiplicationRecursion(int a, int b){
@@ -40,6 +41,11 @@ public class MethodsExercises {
                         else
                                 return (a + multiplicationRecursion(a, b-1));
                 }
+
+        public static int getInteger(int min, int max);
+
+        System.out.print("Enter a number between 1 and 10: ");
+        int userInput = getInteger(1, 10);
 }
 
 
