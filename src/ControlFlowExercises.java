@@ -103,34 +103,34 @@ public class ControlFlowExercises {
 
 
 
-        Do{
-            System.out.print("Enter your grade: ");
-            int grade = userInt.nextInt();
-
-
-
-        if (grade >= 88 && grade <= 100)
-            System.out.print("Hey! you got an: A");
-        else if (grade >= 80 && grade <= 87)
-            System.out.print("Hey! you got an: B");
-        else if (grade >= 67 && grade <= 79)
-            System.out.print("You got an: C");
-        else if (grade >= 60 && grade <= 66)
-            System.out.print("Sorry, You got an: D");
-        else if (grade >= 0 && grade <= 59)
-            System.out.print("Sorry, You got an: F");
-        else
-            System.out.println("Invalid grade entered.");
-         }
-         while (false);
-
-         if(userInput.equalsIgnoreCase("yes")){
-             willcontinue = true;
-         } else {
-             System.out.println("See you later");
-             willcontinue = false;
-         }
-
+//        Do{
+//            System.out.print("Enter your grade: ");
+//            int grade = userInt.nextInt();
+//
+//
+//
+//        if (grade >= 88 && grade <= 100)
+//            System.out.print("Hey! you got an: A");
+//        else if (grade >= 80 && grade <= 87)
+//            System.out.print("Hey! you got an: B");
+//        else if (grade >= 67 && grade <= 79)
+//            System.out.print("You got an: C");
+//        else if (grade >= 60 && grade <= 66)
+//            System.out.print("Sorry, You got an: D");
+//        else if (grade >= 0 && grade <= 59)
+//            System.out.print("Sorry, You got an: F");
+//        else
+//            System.out.println("Invalid grade entered.");
+//         }
+//         while (false);
+//
+//         if(userInput.equalsIgnoreCase("yes")){
+//             willcontinue = true;
+//         } else {
+//             System.out.println("See you later");
+//             willcontinue = false;
+//         }
+//
 
         //        do{
 //            if(userInput.equalsIgnoreCase("yes")) {
