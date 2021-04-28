@@ -9,6 +9,7 @@ public class MethodsExercises {
 //                System.out.println(multiplicationLoop(4, 5));
 //                System.out.println(multiplicationRecursion(4, 5));
                 factoralLoop();
+                diceRoll();
         }
 
 //        public static void addition(double add1, double add2) {
@@ -56,19 +57,26 @@ public class MethodsExercises {
                 int userInput1 = userFactoral.nextInt();
                 System.out.println("You entered " + userInput1);
 
-                if(userInput1 <= 10 && userInput1 >= 1) {
+                if (userInput1 <= 10 && userInput1 >= 1) {
                         long factoral = 1;
                         int i = 1;
-                        while (i <= userInput1){
+                        while (i <= userInput1) {
                                 factoral = factoral * i;
                                 i++;
                         }
                         System.out.println("Factorial of " + userInput1 + " is: " + factoral);
-                }else{
-                      factoralLoop();
+                } else {
+                        factoralLoop();
                 }
         }
+
+
+        public static void diceRoll() {
+                Scanner diceNumber = new Scanner(System.in);
+                System.out.print("Enter a number between 1 and 10: ");
+                int userInput1 = userFactoral.nextInt();
+                System.out.println("You entered " + userInput1);
+        }
+
+
 }
-
-
-
