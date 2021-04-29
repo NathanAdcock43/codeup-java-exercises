@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Random;
 public class MethodsExercises {
         public static void main(String[] args) {
 //                addition(5, 5);
@@ -71,13 +71,29 @@ public class MethodsExercises {
 //        }
 
 
-//        public static void diceRoll() {
-//                Scanner diceNumber = new Scanner(System.in);
-//                System.out.print("Enter a number between 1 and 10: ");
-//                int userInput1 = userFactoral.nextInt();
-//                System.out.println("You entered " + userInput1);
-//        }
+        public static void diceRoll() {
+                Scanner diceGame = new Scanner(System.in);
+                System.out.print("Enter a number between 1 and 12: ");
+                int userInputDiceNum = diceGame.nextInt();
+                System.out.println("You entered " + userInputDiceNum);
+                System.out.println("Ready to roll? Please say yes");
+                String userReady = diceGame.next();
 
+                if(userReady.equalsIgnoreCase("yes")) {
 
+                        Random rand = new Random();
+                        int upperbound = 7;
+                        int int_random = rand.nextInt(upperbound);
+                        int dice1 = int_random;
+                        Random rand2 = new Random();
+                        int upperbound2 = 7;
+                        int int_random2 = rand2.nextInt(upperbound2);
+                        int dice2 = int_random2;
+
+                        System.out.println("You rolled " + dice1 + " with the first dice and  a " + dice2 + " with the second");
+                }else {
+                        diceRoll();
+                }
+        }
 }
 
