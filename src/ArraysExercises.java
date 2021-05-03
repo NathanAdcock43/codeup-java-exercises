@@ -8,7 +8,7 @@ public class ArraysExercises {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
 
-        String[] people = new String[3];
+        Person[] people = new Person[3];
 
         people[0] = "Larry";
         people[1] = "Curly";
@@ -24,14 +24,19 @@ public class ArraysExercises {
         }
 
         System.out.println();
-        String troopComedian1 = "Abbott";
+
+//this string is being declared be pushed into the people array
+
+        Person troopComedian1 = new Person ("Abbott");
         System.out.println(Arrays.toString(addPerson(people, troopComedian1)));
 
     }
 
-    static String[] addPerson(String[] people, String name) {
-        String[] additionalPeople = Arrays.copyOf(people, (people.length + 1));
-        additionalPeople[people.length + 1] = name ;
+    static Person[] addPerson(Person[] people, Person.name) {
+        System.out.println(people.length);
+        String[] additionalPeople = Arrays.copyOf(people, people.length + 1);
+        System.out.println(people.length);
+        additionalPeople[people.length] = name;
 
         return additionalPeople;
     }
