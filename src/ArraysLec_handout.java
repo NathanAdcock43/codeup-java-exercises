@@ -143,20 +143,20 @@ public class ArraysLec_handout {
                 {4, 5, 6}, //row 2
                 {7, 8, 9}  //row 3
         };
-//
-//        for (int[] row : matrix){ //an individual int array from our array of arrays
-//            System.out.println("+---+---+---+");
-//            System.out.print("| ");
-//
-//            for (int number : row){ //an individual number from our int array
-//                System.out.print(number + " | ");
-//            }
-//
-//            System.out.println();
-//        }
-//        System.out.println("+---+---+---+");
-//
-//        System.out.println("matrix[0][0] = " + matrix[0][0]); //row 1, col 1
+
+        for (int[] row : matrix){ //an individual int array from our array of arrays
+            System.out.println("+---+---+---+");
+            System.out.print("| ");
+
+            for (int number : row){ //an individual number from our int array
+                System.out.print(number + " | ");
+            }
+
+            System.out.println();
+        }
+        System.out.println("+---+---+---+");
+
+        System.out.println("matrix[0][0] = " + matrix[0][0]); //row 1, col 1
 
         //TODO Interactive: Help me out here, if matrix[0][0] worked as demonstrated above, can you help me print out the "5" and "9"?
 
@@ -167,9 +167,9 @@ public class ArraysLec_handout {
         System.out.println("|| ALIEN ACTIVITY DETECTED IN OUR GRID ||");
         System.out.println("** ALERT ** ALERT ** ALERT");
         System.out.println("Deploying MIB personnel to counter alien activity!");
-         System.out.println("MIB Officer Douglas H. headed to grid area " + matrix[1][2] + "!"); //should say "grid area 6!"
-         System.out.println("MIB Officer Larry C. headed to grid area " + matrix[2][0] + "!"); //should say "grid area 7!"
-         System.out.println("MIB Officer Kenneth H. headed to grid area " + matrix[0][1] + "!"); //should say "grid area 2!"
+        System.out.println("MIB Officer Douglas H. headed to grid area " + matrix[1][2] + "!"); //should say "grid area 6!"
+        System.out.println("MIB Officer Larry C. headed to grid area " + matrix[2][0] + "!"); //should say "grid area 7!"
+        System.out.println("MIB Officer Kenneth H. headed to grid area " + matrix[0][1] + "!"); //should say "grid area 2!"
 
 
 
