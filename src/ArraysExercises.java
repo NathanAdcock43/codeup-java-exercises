@@ -10,6 +10,8 @@ public class ArraysExercises {
 
         Person[] people = new Person[3];
 
+//        TODO need to create a Person constructor on the last exercise to get this to work
+
         people[0] = "Larry";
         people[1] = "Curly";
         people[2] = "Moe";
