@@ -5,7 +5,7 @@ public class Person {
         Person nathan = new Person();
         nathan.name = "Nathan";
         System.out.println(nathan.getName());
-
+        System.out.println(nathan.setName("Nate"));
 
     }
     private String name;
@@ -15,13 +15,15 @@ public class Person {
         return name;
     }
 
-    public void setName(String name) {
+    public String setName(String name) {
 //TODO: change the name property to the passed value
-        name = name;
+       this.name = name;
+       return name;
     }
 
-    public void sayHello() {
+    public String sayHello() {
 //TODO: print a message to the console using the person's name
-        System.out.println(name);
+        System.out.println(this.name);
+        return this.name;
     }
 }
