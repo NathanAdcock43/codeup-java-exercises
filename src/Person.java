@@ -1,6 +1,11 @@
+
 public class Person {
     public static void main(String[] args) {
-       getName();
+
+        Person nathan = new Person();
+        nathan.name = "Nathan";
+        System.out.println(nathan.getName());
+
 
     }
     private String name;
@@ -12,7 +17,7 @@ public class Person {
 
     public void setName(String name) {
 //TODO: change the name property to the passed value
-
+        name = name;
     }
 
     public void sayHello() {

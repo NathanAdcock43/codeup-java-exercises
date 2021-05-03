@@ -79,21 +79,24 @@ public class MethodsExercises {
                 System.out.println("Ready to roll? Please say yes");
                 String userReady = diceGame.next();
 
-                if(userReady.equalsIgnoreCase("yes")) {
+                while(userReady.equalsIgnoreCase("yes")) {
 
-                        Random rand = new Random();
-                        int upperbound = 7;
-                        int int_random = rand.nextInt(upperbound);
-                        int dice1 = int_random;
-                        Random rand2 = new Random();
-                        int upperbound2 = 7;
-                        int int_random2 = rand2.nextInt(upperbound2);
-                        int dice2 = int_random2;
 
-                        System.out.println("You rolled " + dice1 + " with the first dice and  a " + dice2 + " with the second");
-                }else {
-                        diceRoll();
+                                Random rand = new Random();
+                                int upperbound = 7;
+                                int outerbound = 1;
+                                int int_random = rand.nextInt(upperbound);
+                                int dice1 = int_random;
+                                Random rand2 = new Random();
+                                int upperbound2 = 7;
+                                int outerbound2 = 1;
+                                int int_random2 = rand2.nextInt(upperbound2);
+                                int dice2 = int_random2;
+
+                                System.out.println("You rolled " + dice1 + " with the first dice and  a " + dice2 + " with the second");
+
                 }
+            System.out.println("thanks for playing");
         }
 }
 
