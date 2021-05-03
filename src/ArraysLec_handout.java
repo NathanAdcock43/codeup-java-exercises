@@ -14,7 +14,23 @@ public class ArraysLec_handout {
 
         //TODO Together: Let's set up our first array - an array of prices with a double datatype.
 
+        double [] prices = new double[4];
+
+        System.out.println("prices[0] = " + prices[0]);
+        System.out.println("prices[1] = " + prices[1]);
+
         //TODO Together: Nice! So, we can set up an array with a literal (prices = new double[4], diceSides = new int[6], groceryList = new String[10]), but that's not all. We can also use a constant or variable!
+
+        final int dicesides = 6;
+
+        int[] sidesArray = new int[dicesides];
+
+        System.out.println("sidesArray[6] = " + sidesArray[5]);
+
+        int numberGroceries = 10;
+        String[] groceryList = new String[numberGroceries];
+
+        System.out.println("groceryList[5] = " + groceryList[5]);
 
         //~*~ Array Elements ~*~
 
@@ -23,6 +39,9 @@ public class ArraysLec_handout {
 
         //TODO Together: Let's see some of these defaults in action from our prior examples.
 
+//        System.out.println("sidesArray[5] = " + sidesArray[5]);
+
+
         //TODO Together: What if we try to refer to an index beyond what we have set up?
 
         //TODO Together: We can use the ARRAY INITIALIZER to set up not only our array and its length, but the elements inside as well!
@@ -30,28 +49,62 @@ public class ArraysLec_handout {
         //TODO: Build your first Java array! Feel free to use the array initializer or otherwise, but take time to make an array of your choosing and then test it out with a System.out.print of some kind to check an element within to satisfaction.
         //TODO Example: String[] myPets = new String[2]; myPets[0] = "Fluffy"; myPets[1] = "Spot"; OR: String[] myPets = {"Fluffy", "Spot"}. System.out.print(myPets[0]) // Fluffy
 
+        int[] decades = {1960, 1970, 1980, 1990, 2000, 2010};
+        System.out.println("decades[2] = " + decades[2]);
+
+        String[] pets = { "Midnight", "Mr. Cat"};
+        System.out.println("pets[1] = " + pets[1]);
+
+
         //~*~ Iterating Arrays ~*~
         //for + .length:
 
         //TODO Together: A for loop [for(init;cond;count){}] can perform similar iteration tasks as we had used it for in JS.
+
+        for(int i = 0; i < decades.length; i++){
+            System.out.println("a recent decade is " + decades[i]);
+        }
+
 
         //enhanced for (loop : loops){}
         //TODO Together: Java also provides an enhanced for [for (ele : arr) {}] to use!
 
         //TODO: Using the array you set up above, practice iterating through the array using both of our types of for loops. When might you choose to use one over the other?
 
-        //~*~ Java array.methods() ~*~
-        //We have access to a variety of pre-built static methods in the java.util.Arrays class
+
+
 
         //void Arrays.fill(arrayName, value) = let's fill all elements in the array provided with the given value.
         //TODO Together: An empty groceryList isn't going to work - let's at least get something in there. Everyone loves ice cream, right?
+
+        System.out.println();
+        for(int decade : decades){
+            System.out.println("a recent decade is " + decade);
+        }
+        //~*~ Java array.methods() ~*~
+        //We have access to a variety of pre-built static methods in the java.util.Arrays class
+        for(String grocery: groceryList){
+            Arrays.fill(groceryList, "ice cream");
+            System.out.println(grocery);
+        }
 
         //array Arrays.copyOf(myArray, arrLength) = let's make a clean copy of myArray up to arrLength element
         //TODO Together: Well, that was certainly a lot of ice cream. I think we overdid it though - maybe three pints of ice cream would suffice for a weekend ice cream party.
 
 
+//        new length list of groceries based off of the groceryList Arr
+
+        System.out.println();
+        String[] newList = Arrays.copyOf(groceryList, 3);
+
+        for(String grocery: newList){
+            Arrays.fill(groceryList, "ice cream");
+            System.out.println(grocery);
+        }
+
         //Arrays.equals(arr1, arr2) = T/F: are both arrays the same type and all the elements equal?
         //TODO Together: Let's demonstrate .equals() by comparing our ice cream party lists:
+        System.out.println("Arrays.equals(groceryList, newList) = " + Arrays.equals(groceryList, newList));
 
 
         //~*~ More Array.methods() ~*~
@@ -59,13 +112,23 @@ public class ArraysLec_handout {
         //Arrays.toString(arr) = returns a String representation of the array including the brackets
         //TODO Together: We have an array of Cohorts in this file - let's stringify that array.
 
+        System.out.println("Arrays.toString(decades) = " + Arrays.toString(decades));
+
         //TODO Together: We do get the brackets back with the method, but let's solve that with a little method chain-chain-chain as an example of what you could do:
+
+        System.out.println(Arrays.toString(decades).replace("[", "").replace("]", ""));
 
         //Arrays.sort(arr) - Sort elements of array into ascending order
         //TODO Together: Hey, Oberon and Neptune are out of line in our array - .sort might help us out there!
 
+//        Arrays.sort();
+//
+//        Arrays.toString(decades).replace("[", "").replace("]", "")
+
         //Arrays.binarySearch(array, value) = returns int index of value when found, negative number when not found
         //TODO Together: Let's demonstrate binarySearch by looking for a couple cohorts in our array.
+
+        System.out.println("Arrays.binarySearch(decades, \"1980\") = " + Arrays.binarySearch(decades, 1980));
 
         //TODO: We've covered a lot of different methods so far - pick at least two(2) to experiment with below with either an array from the lecture, your earlier array you built, or a brand new array for this TODO.
 
@@ -80,20 +143,20 @@ public class ArraysLec_handout {
                 {4, 5, 6}, //row 2
                 {7, 8, 9}  //row 3
         };
-
-        for (int[] row : matrix){ //an individual int array from our array of arrays
-            System.out.println("+---+---+---+");
-            System.out.print("| ");
-
-            for (int number : row){ //an individual number from our int array
-                System.out.print(number + " | ");
-            }
-
-            System.out.println();
-        }
-        System.out.println("+---+---+---+");
-
-        System.out.println("matrix[0][0] = " + matrix[0][0]); //row 1, col 1
+//
+//        for (int[] row : matrix){ //an individual int array from our array of arrays
+//            System.out.println("+---+---+---+");
+//            System.out.print("| ");
+//
+//            for (int number : row){ //an individual number from our int array
+//                System.out.print(number + " | ");
+//            }
+//
+//            System.out.println();
+//        }
+//        System.out.println("+---+---+---+");
+//
+//        System.out.println("matrix[0][0] = " + matrix[0][0]); //row 1, col 1
 
         //TODO Interactive: Help me out here, if matrix[0][0] worked as demonstrated above, can you help me print out the "5" and "9"?
 
@@ -104,9 +167,9 @@ public class ArraysLec_handout {
         System.out.println("|| ALIEN ACTIVITY DETECTED IN OUR GRID ||");
         System.out.println("** ALERT ** ALERT ** ALERT");
         System.out.println("Deploying MIB personnel to counter alien activity!");
-        // System.out.println("MIB Officer Douglas H. headed to grid area " + matrix[?][?] + "!"); //should say "grid area 6!"
-        // System.out.println("MIB Officer Larry C. headed to grid area " + matrix[?][?] + "!"); //should say "grid area 7!"
-        // System.out.println("MIB Officer Kenneth H. headed to grid area " + matrix[?][?] + "!"); //should say "grid area 2!"
+         System.out.println("MIB Officer Douglas H. headed to grid area " + matrix[1][2] + "!"); //should say "grid area 6!"
+         System.out.println("MIB Officer Larry C. headed to grid area " + matrix[2][0] + "!"); //should say "grid area 7!"
+         System.out.println("MIB Officer Kenneth H. headed to grid area " + matrix[0][1] + "!"); //should say "grid area 2!"
 
 
 
