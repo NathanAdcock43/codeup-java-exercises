@@ -29,6 +29,12 @@ public class Person {
        this.name = name;
         System.out.println(this.name);
     }
+    public Person(){
+
+    }
+    public Person(String name){
+        this.name = name;
+    }
 
     public void sayHello() {
 //TODO: print a message to the console using the person's name
