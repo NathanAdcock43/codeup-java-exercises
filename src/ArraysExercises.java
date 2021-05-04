@@ -21,21 +21,28 @@ public class ArraysExercises {
 
         System.out.println("Arrays.toString(people) = " + Arrays.toString(people));
 
-        System.out.println();
 
-        for (Person person: people){
 
-            System.out.println("person = " + person + " was a member of a comedy troop");
-        }
 
-        System.out.println();
+
 
 //this string is being declared be pushed into the people array
 //need to
         Person troopComedian1 = new Person ("Abbott");
-        System.out.println(Arrays.toString(addPerson(people, troopComedian1)));
+
+
+        for (people i = 0 ; i < people.length; i++){
+
+            System.out.println("person = " + i + " was a member of a comedy troop");
+
+            System.out.println(addPerson(people, troopComedian1))[1].getName;
+
+        }
+
 
     }
+
+
 
     public static Person[] addPerson(Person[] people, Person person) {
         Person[] additionalPeople = Arrays.copyOf(people, people.length + 1);
