@@ -24,16 +24,17 @@ public class Person {
         System.out.println(name);
     }
 
-    public void setName(String name) {
-//TODO: change the name property to the passed value
-       this.name = name;
-        System.out.println(this.name);
-    }
     public Person(){
 
     }
     public Person(String name){
         this.name = name;
+    }
+
+    public void setName(String name) {
+//TODO: change the name property to the passed value
+       this.name = name;
+        System.out.println(this.name);
     }
 
     public void sayHello() {

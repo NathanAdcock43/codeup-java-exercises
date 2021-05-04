@@ -11,6 +11,7 @@ public class ArraysExercises {
         System.out.println(Arrays.toString(numbers));
 
         Person[] people = new Person[3];
+//        Person[] people = {"Larry", "Curly", "Moe"};
 
 
         people[0].setName("Larry");
@@ -18,16 +19,16 @@ public class ArraysExercises {
         people[2].setName("Moe");
 
 
-//        System.out.println("Arrays.toString(people) = " + Arrays.toString(people));
-//
-//        System.out.println();
+        System.out.println("Arrays.toString(people) = " + Arrays.toString(people));
 
-//        for (String person: people){
-//
-//            System.out.println("person = " + person + " was a member of a comedy troop");
-//        }
-//
-//        System.out.println();
+        System.out.println();
+
+        for (Person person: people){
+
+            System.out.println("person = " + person + " was a member of a comedy troop");
+        }
+
+        System.out.println();
 
 //this string is being declared be pushed into the people array
 //need to
@@ -42,6 +43,7 @@ public class ArraysExercises {
 
         return additionalPeople;
     }
+
 
 
 
