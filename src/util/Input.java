@@ -32,13 +32,13 @@ public class Input {
 //    }
 //        System.out.print("Enter an integer: ");
 //        int userInput = scanner.nextInt();
-////    public int getInt(int min, int max){
-////        if (typeof(this) == int){
-////            return true;
-////        }else {
-////            return false;
-////        }
-////    }
+//    public int getInt(int min, int max){
+//        if (typeof(this) == int){
+//            return true;
+//        }else {
+//            return false;
+//        }
+//    }
 //        System.out.print("Enter an integer: ");
 //        int userInput = scanner.nextInt();
 //    public int getInt(){
@@ -50,13 +50,13 @@ public class Input {
 //    }
 //        System.out.print("Enter an integer: ");
 //        int userInput = scanner.nextInt();
-////    public double getDouble(double min, double max){
-////        if (typeof(this) == double){
-////            return true;
-////        }else {
-////            return false;
-////        }
-////    }
+//    public double getDouble(double min, double max){
+//        if (typeof(this) == double){
+//            return true;
+//        }else {
+//            return false;
+//        }
+//    }
 //        System.out.print("Enter an integer: ");
 //        int userInput = scanner.nextInt();
 //    public double getDouble(){
