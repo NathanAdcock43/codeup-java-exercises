@@ -28,28 +28,28 @@ public class ArraysExercises {
 
 //this string is being declared be pushed into the people array
 //need to
-        Person troopComedian1 = new Person ("Abbott");
-
-
-        for (people i = 0 ; i < people.length; i++){
-
-            System.out.println("person = " + i + " was a member of a comedy troop");
-
-            System.out.println(addPerson(people, troopComedian1))[1].getName;
-
-        }
-
-
-    }
-
-
-
-    public static Person[] addPerson(Person[] people, Person person) {
-        Person[] additionalPeople = Arrays.copyOf(people, people.length + 1);
-        additionalPeople[people.length] = person;
-
-        return additionalPeople;
-    }
+//        Person troopComedian1 = new Person ("Abbott");
+//
+//
+//        for (people i = 0 ; i < people.length; i++){
+//
+//            System.out.println("person = " + i + " was a member of a comedy troop");
+//
+//            System.out.println(addPerson(people, troopComedian1))[1].getName;
+//
+//        }
+//
+//
+//    }
+//
+//
+//
+//    public static Person[] addPerson(Person[] people, Person person) {
+//        Person[] additionalPeople = Arrays.copyOf(people, people.length + 1);
+//        additionalPeople[people.length] = person;
+//
+//        return additionalPeople;
+//    }
 
 
 
