@@ -9,7 +9,6 @@ public class Circle {
         int userInput = scanner.nextInt();
         return userInput;
     }
-
     public static double getTwiceRadius(double radius){
         double doubleRadius = radius * 2;
         return doubleRadius;
@@ -22,4 +21,5 @@ public class Circle {
         double circumference = 2 * Math.PI * radius;
         return circumference;
     }
+
 }
