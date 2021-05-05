@@ -7,19 +7,19 @@ public class ArraysExercises {
 
 //    public static void main(String[] args)
     public static void main (String[] arg){
-        int[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(Arrays.toString(numbers));
-
-        Person[] people = new Person[3];
-//        Person[] people = {"Larry", "Curly", "Moe"};
-
-
-        people[0].setName("Larry");
-        people[1].setName("Curly");
-        people[2].setName("Moe");
-
-
-        System.out.println("Arrays.toString(people) = " + Arrays.toString(people));
+//        int[] numbers = {1, 2, 3, 4, 5};
+//        System.out.println(Arrays.toString(numbers));
+//
+//        Person[] people = new Person[3];
+////        Person[] people = {"Larry", "Curly", "Moe"};
+//
+//
+//        people[0].setName("Larry");
+//        people[1].setName("Curly");
+//        people[2].setName("Moe");
+//
+//
+//        System.out.println("Arrays.toString(people) = " + Arrays.toString(people));
 
 
 
@@ -49,7 +49,7 @@ public class ArraysExercises {
 //        additionalPeople[people.length] = person;
 //
 //        return additionalPeople;
-//    }
+    }
 
 
 
