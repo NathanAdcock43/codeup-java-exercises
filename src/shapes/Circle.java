@@ -5,8 +5,8 @@ public class Circle {
 
     public static double getRadius() {
         System.out.print("Enter a circle radius: ");
-        Scanner scanner = new Scanner(System.in);
-        int userInput = scanner.nextInt();
+        Scanner askRadius = new Scanner(System.in);
+        double userInput = askRadius.nextDouble();
         return userInput;
     }
     public static double getTwiceRadius(double radius){

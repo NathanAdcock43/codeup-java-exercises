@@ -9,7 +9,7 @@ public class StringExercise {
         String escapeQuotes = "Check \"this\" out!, \"s inside of \"s!";
         System.out.println(escapeQuotes);
 
-        String escapeSlash = "In windows, the main drive is usually C:\"";
+        String escapeSlash = "In windows, the main drive is usually C:\\";
         System.out.println(escapeSlash);
 
         String escapeSlashs = "I can do backslashes \\, double backslashes \\\\, \n and the amazing triple backslash \\\\\\!";
