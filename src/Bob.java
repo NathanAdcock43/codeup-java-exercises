@@ -6,26 +6,27 @@ public class Bob {
         System.out.println("What would you like to say to Bob?");
     }
 
-
-//    public static void Bob() {
+//    static String bobResponseQuestion = "Bob: Sure";
+//    static String bobResponseExclaim = "Bob: Whoa, chill out!";
+//    static String bobResponseEmpty = "Bob: Fine. Be that way!";
+//    static String bobResponseElse = "Bob: Whatever.";
+//    static boolean condition;
+//    public static void bobTalks() {
 //
 //
-//        do {
-//            Scanner bob = new Scanner(System.in);
+//
+//            Scanner sc = new Scanner(System.in);
 //            System.out.println("Would you like to speak with Bob?");
-//            String UserInput1 = bob.nextLine();
+//            String UserInput1 = sc.nextLine();
 //            if (UserInput1.equalsIgnoreCase("yes")){
-//
-//            }else{
+//                condition = true;
+//            }else{ condition = false;
 //
 //            }
 //
+//        while(condition){
+//            String UserInput2 = sc.next();
 //
-//            String UserInput2 = bob.next();
-//            String bobResponseQuestion = "Bob: Sure";
-//            String bobResponseExclaim = "Bob: Whoa, chill out!";
-//            String bobResponseEmpty = "Bob: Fine. Be that way!";
-//            String bobResponseElse = "Bob: Whatever.";
 //
 //
 //            if (UserInput2.contains("?")) {
@@ -38,6 +39,6 @@ public class Bob {
 //                System.out.println(bobResponseElse);
 //            }
 //
-//        } while ()
+//        }
 //    }
 }
