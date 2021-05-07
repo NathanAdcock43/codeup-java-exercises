@@ -1,0 +1,49 @@
+---------- Data Structures
+
+Collections of data can be structured in different ways. 
+
+Different data structures have different pros and cons for accessing and changing data.
+
+
+
+---------- Java Collections Framework
+
+Oracle Overview of Collections Framework... https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
+
+Oracle Tutorial of Collections Framework... https://docs.oracle.com/javase/tutorial/collections/index.html
+
+TLDR:
+
+Provides standard requirements for creating different collection types.
+
+Organized into several interfaces in the java.util package that can be implemented by custom collections.
+
+Some pre-made implementations of these interfaces are included in the framework.
+
+We will explore two implementations: ArrayList and HashMap
+
+
+
+---------- ArrayList
+
+An implementation of the List interface
+
+Like a flexible-sized array (like an array in JS)
+
+Can only store reference types
+
+Can only store one type when using Java Generics to ensure type safety
+
+Uses Java Generics to prevent having to explictly cast objects when retrieving them (ensures type safety)
+
+Arrays can be more efficient and can work with collections of primative data types
+
+
+
+---------- HashMap
+
+An implementation of the Map interface
+
+Very similar to objects in JS
+
+Not technically considered a collection since it is not a series of data but key value pairs
