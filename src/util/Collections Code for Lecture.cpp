@@ -198,6 +198,31 @@ public class CollectionsLecture {
 //        System.out.println(usernames);
 //        System.out.println(usernames.isEmpty());
 
+//    TODO: Create a HashMap of three people in class with keys using their last name
+//             and values at those keys using their first name.
+
+             Map<String, String> studentNames = new HashMap<>();
+                     usernames.put("Salim", "Ahmedabadi");
+                     usernames.put("Manny", "Stephen");
+                     usernames.put("Shanshan", "Su");
+
+                     System.out.println(studentNames.get("Manny"));
+
+//             Example
+//
+//             "Justin" could be returned from nameHashMap.get("Reich")
+//
+//            BONUS TODO: Create a HashMap containing three people in the class with keys using their
+//             first name and values that are an ArrayList of strings containing at least two
+//             objects visible in their background.
+
+//             Example
+//
+//             ArrayList<String> with values ("Codeup Sign", "Black Background", "Nothing Else")
+//             from backgroundHashMap.get("Justin")
+
+         */
+
 
     }
 
