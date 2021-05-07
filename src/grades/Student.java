@@ -1,5 +1,7 @@
 package grades;
 
+import com.sun.jdi.Value;
+
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -15,8 +17,13 @@ public class Student {
     public static void main(String[] args){
 //        instantiate three students add grades for each student; place students into hashmap
         Student Rob = new Student("Rob");
-        getGradeAverage();
-        addGrade(95);
+        Rob.addGrade(95);
+        Rob.addGrade(65);
+        Rob.addGrade(82);
+        System.out.println("Rob = " + Rob);
+        System.out.println("Rob.grades = " + Rob.grades);
+        System.out.println("Rob.getGradeAverage() = " + Rob.getGradeAverage());
+
 
 //        Map<String, Student> codeStudent = new HashMap<>();
 //        Student.put("Salim");
@@ -30,7 +37,7 @@ public class Student {
 
     private ArrayList<Integer> grades;
 
-    Student(String name){
+    public Student(String name){
         this.name = name;
         this.grades = new ArrayList<>();
     }
@@ -59,5 +66,6 @@ public class Student {
         }
         return bucket / grades.size();
     }
+
 
 }
