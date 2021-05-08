@@ -14,23 +14,22 @@ import java.util.*;
 
 public class Student {
 
+
     public static void main(String[] args){
 //        instantiate three students add grades for each student; place students into hashmap
         Student Rob = new Student("Rob");
-        Student Salim = new Student("Salim");
-        Student Manny = new Student("Manny");
-        Student Shanshan = new Student("Shanshan");
-        Student Jonathan = new Student("Jonathan");
+
 
         Rob.addGrade(95);
         Rob.addGrade(65);
         Rob.addGrade(82);
         System.out.println("Rob = " + Rob);
         System.out.println("Rob.grades = " + Rob.grades);
-        System.out.println("Rob.getGradeAverage() = " +             Rob.getGradeAverage());
+        System.out.println("Rob.getGradeAverage() = " + Rob.getGradeAverage());
 
 
     }
+
 
     private String name;
 
@@ -52,6 +51,9 @@ public class Student {
     public String getName() {
         return name;
     }
+    public ArrayList<Integer> getGrade() {
+        return grades;
+    }
 
     public void addGrade(int grade) {
         grades.add(grade);
@@ -67,4 +69,12 @@ public class Student {
     }
 
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", grades=" + grades +
+                ", bucket=" + bucket +
+                '}';
+    }
 }
