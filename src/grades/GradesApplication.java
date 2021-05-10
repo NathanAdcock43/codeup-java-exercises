@@ -14,8 +14,8 @@ public class GradesApplication {
         Map<String, Student> students = new HashMap<>();
         students.put("@ahmedabadi", Salim);
         students.put("@MStephen", Manny);
-        students.put("@Su", Shanshan);
-        students.put("@Sanchez", Jonathan);
+        students.put("@ShanSu", Shanshan);
+        students.put("@JSanchez", Jonathan);
         System.out.println("Student = " + students);
         System.out.println(Salim.toString());
 
