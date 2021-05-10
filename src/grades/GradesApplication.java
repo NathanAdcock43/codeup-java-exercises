@@ -19,6 +19,10 @@ public class GradesApplication {
         System.out.println("Student = " + students);
         System.out.println(Salim.toString());
 
+        System.out.println("Welcome!");
+        System.out.println("Here are the Names of our students: ");
+
+
     }
 
 
