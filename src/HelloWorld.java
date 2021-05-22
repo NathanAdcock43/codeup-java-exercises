@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.print("Hello!");
@@ -44,5 +47,15 @@ public class HelloWorld {
         num += num;
         num *= 3;
         System.out.println(num);
+
+        System.out.println();
+
+        int[][] primes = new int[3][3];
+        primes[2][2] = 1;
+
+        System.out.println(primes[1][2]);
     }
+
+
+
 }
